@@ -1,0 +1,86 @@
+/////////* form.scss specify for the Index.html */////////
+
+body {
+    @extend %flex--wrap--center;
+    margin: 0;
+}
+
+
+.entire-page {
+
+    max-width: 850px;
+
+
+    .title {
+        @include primary__theme;
+        @extend %flex--wrap--center;
+    }
+
+    .menu {
+
+        margin: 20px 0 20px 0;
+        @extend %flex--wrap--center;
+
+        &__card {
+            margin: 20px;
+        }
+
+    }
+
+    .soon {
+        @extend %flex--wrap--center;
+        margin-bottom: 20px;
+
+        &_box {
+            @include primary__theme;
+            border-radius: 15px;
+            padding: 5px 15px 5px 15px;
+            @extend %flex--wrap--center;
+
+        }
+
+
+    }
+
+
+    .footer {
+        @include primary__theme;
+        @extend %flex--wrap--center;
+        justify-content: space-between;
+        padding: 0 15px 0 15px;
+
+    }
+
+}
+
+/////////* form.scss specify for all the "Menus".html */////////
+
+
+.entire-page-menu {
+
+    width: 850px;
+
+    .title {
+        @include primary__theme;
+        @extend %flex--wrap--center;
+    }
+
+    .menu {
+        border: 3px red solid;
+
+        &__dishes {
+
+            @include menus--table;
+
+        }
+    }
+
+    .footer {
+        @include primary__theme;
+        @extend %flex--wrap--center;
+        justify-content: space-between;
+        padding: 0 15px 0 15px;
+
+    }
+
+}

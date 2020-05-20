@@ -1,0 +1,80 @@
+body, .entire-page .title, .entire-page .menu, .entire-page .soon, .entire-page .soon_box, .entire-page .footer, .entire-page-menu .title, .entire-page-menu .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body {
+  margin: 0;
+}
+
+.entire-page {
+  max-width: 850px;
+}
+
+.entire-page .title {
+  background-color: #4b9b87;
+  color: #ffd11a;
+}
+
+.entire-page .menu {
+  margin: 20px 0 20px 0;
+}
+
+.entire-page .menu__card {
+  margin: 20px;
+}
+
+.entire-page .soon {
+  margin-bottom: 20px;
+}
+
+.entire-page .soon_box {
+  background-color: #4b9b87;
+  color: #ffd11a;
+  border-radius: 15px;
+  padding: 5px 15px 5px 15px;
+}
+
+.entire-page .footer {
+  background-color: #4b9b87;
+  color: #ffd11a;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 15px 0 15px;
+}
+
+.entire-page-menu {
+  width: 850px;
+}
+
+.entire-page-menu .title {
+  background-color: #4b9b87;
+  color: #ffd11a;
+}
+
+.entire-page-menu .menu {
+  border: 3px red solid;
+}
+
+.entire-page-menu .menu__dishes table,
+.entire-page-menu .menu__dishes td {
+  width: 100%;
+  border: 2px black solid;
+}
+
+.entire-page-menu .footer {
+  background-color: #4b9b87;
+  color: #ffd11a;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 15px 0 15px;
+}
+/*# sourceMappingURL=main.css.map */

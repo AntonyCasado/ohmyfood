@@ -1,0 +1,24 @@
+/////////* General Mixins  for the "All" */////////
+
+@mixin primary__theme {
+    background-color: $primary-color-background;
+    color: $primary-color-text;
+}
+
+
+/////////* Mixins specify for the "entire-page" */////////
+
+
+
+/////////* Mixins specify for the "entire-page-menus" */////////
+
+
+@mixin menus--table {
+
+    table,
+    td {
+        width: 100%;
+        border: 2px black solid;
+    }
+
+}
