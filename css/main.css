@@ -1,12 +1,7 @@
-body, .entire-page .title, .entire-page .menu, .entire-page .soon, .entire-page .soon_box, .entire-page .footer, .entire-page-menu .title, .entire-page-menu .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.entire-page-menu-3 .title, .footer, .entire-page-menu-2 .title, .entire-page-menu .footer, .entire-page-menu .menu .menu__footer, .entire-page-menu .title, .entire-page .footer, .entire-page .soon_box, .entire-page .soon, .entire-page .menu, .entire-page .title, body {
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 body {
@@ -16,65 +11,153 @@ body {
 .entire-page {
   max-width: 850px;
 }
-
 .entire-page .title {
   background-color: #4b9b87;
   color: #ffd11a;
 }
-
 .entire-page .menu {
   margin: 20px 0 20px 0;
 }
-
 .entire-page .menu__card {
   margin: 20px;
 }
-
 .entire-page .soon {
   margin-bottom: 20px;
 }
-
 .entire-page .soon_box {
   background-color: #4b9b87;
   color: #ffd11a;
   border-radius: 15px;
   padding: 5px 15px 5px 15px;
 }
-
 .entire-page .footer {
   background-color: #4b9b87;
   color: #ffd11a;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 0 15px 0 15px;
 }
 
 .entire-page-menu {
   width: 850px;
 }
-
 .entire-page-menu .title {
   background-color: #4b9b87;
   color: #ffd11a;
 }
-
-.entire-page-menu .menu {
-  border: 3px red solid;
+.entire-page-menu .title-menu {
+  text-align: center;
+  padding: 40px 0 0 0;
 }
-
-.entire-page-menu .menu__dishes table,
+.entire-page-menu .menu {
+  background-color: #ffe6e6;
+  margin: 0 auto 50px auto;
+  max-width: 630px;
+}
+.entire-page-menu .menu__title {
+  text-align: center;
+  padding: 40px 0 0 0;
+}
+.entire-page-menu .menu__dishes {
+  margin: 0 50px 0 50px;
+}
 .entire-page-menu .menu__dishes td {
   width: 100%;
-  border: 2px black solid;
+  height: 40px;
 }
-
+.entire-page-menu .menu__dishes td:nth-child(2) {
+  text-align: right;
+}
+.entire-page-menu .menu .menu__footer {
+  margin: 50px auto 50px auto;
+}
+.entire-page-menu .menu .menu__footer .icones {
+  padding: 0 10px 0 10px;
+}
 .entire-page-menu .footer {
   background-color: #4b9b87;
   color: #ffd11a;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 0 15px 0 15px;
 }
+
+.entire-page-menu-2 {
+  width: 850px;
+}
+.entire-page-menu-2 .title {
+  background-color: #4b9b87;
+  color: #ffd11a;
+}
+.entire-page-menu-2 .title-menu {
+  text-align: center;
+  padding: 40px 0 0 0;
+}
+.entire-page-menu-2 .menu {
+  height: 900px;
+  background-color: #fff0f0;
+  margin: 0 auto 50px auto;
+  max-width: 630px;
+}
+.entire-page-menu-2 .menu__title {
+  text-align: center;
+  padding: 40px 0 0 0;
+  padding: 60px 0 50px 0;
+}
+.entire-page-menu-2 .menu__dishes {
+  margin: 0 20px 0 20px;
+}
+.entire-page-menu-2 .menu__dishes td {
+  width: 100%;
+  height: 40px;
+}
+.entire-page-menu-2 .menu__dishes td:nth-child(2) {
+  text-align: right;
+}
+
+.footer {
+  background-color: #4b9b87;
+  color: #ffd11a;
+  justify-content: space-between;
+  padding: 0 15px 0 15px;
+}
+
+.entire-page-menu-3 {
+  width: 850px;
+}
+.entire-page-menu-3 .title {
+  background-color: #4b9b87;
+  color: #ffd11a;
+}
+.entire-page-menu-3 .title-menu {
+  text-align: center;
+  padding: 40px 0 0 0;
+}
+.entire-page-menu-3 .menu {
+  height: 900px;
+  background-color: #fff5f5;
+  margin: 0 auto 50px auto;
+  max-width: 630px;
+}
+.entire-page-menu-3 .menu__title {
+  text-align: center;
+  padding: 40px 0 0 0;
+  padding: 60px 0 50px 0;
+}
+.entire-page-menu-3 .menu__dishes {
+  margin: 0 20px 0 20px;
+}
+.entire-page-menu-3 .menu__dishes td {
+  width: 100%;
+  height: 40px;
+}
+.entire-page-menu-3 .menu__dishes td:nth-child(2) {
+  text-align: right;
+}
+
+.footer {
+  background-color: #4b9b87;
+  color: #ffd11a;
+  justify-content: space-between;
+  padding: 0 15px 0 15px;
+}
+
 /*# sourceMappingURL=main.css.map */

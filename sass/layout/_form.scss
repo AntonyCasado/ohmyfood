@@ -10,7 +10,6 @@ body {
 
     max-width: 850px;
 
-
     .title {
         @include primary__theme;
         @extend %flex--wrap--center;
@@ -24,7 +23,6 @@ body {
         &__card {
             margin: 20px;
         }
-
     }
 
     .soon {
@@ -36,10 +34,7 @@ body {
             border-radius: 15px;
             padding: 5px 15px 5px 15px;
             @extend %flex--wrap--center;
-
         }
-
-
     }
 
 
@@ -53,7 +48,7 @@ body {
 
 }
 
-/////////* form.scss specify for all the "Menus".html */////////
+/////////* form.scss specify for the menu-1.html */////////
 
 
 .entire-page-menu {
@@ -65,13 +60,32 @@ body {
         @extend %flex--wrap--center;
     }
 
+    .title-menu {
+        @include menu__title--spec;
+    }
+
     .menu {
-        border: 3px red solid;
+
+        @include menu__theme;
+        @include menu__sizing;
+
+        &__title {
+            @include menu__title--spec;
+        }
 
         &__dishes {
-
+            margin: 0 50px 0 50px;
             @include menus--table;
+        }
 
+        .menu__footer {
+
+            margin: 50px auto 50px auto;
+            @extend %flex--wrap--center;
+
+            .icones {
+                padding: 0 10px 0 10px;
+            }
         }
     }
 
@@ -80,7 +94,87 @@ body {
         @extend %flex--wrap--center;
         justify-content: space-between;
         padding: 0 15px 0 15px;
-
     }
 
+}
+
+
+/////////* form.scss specify for the menu-2.html */////////
+
+
+.entire-page-menu-2 {
+    width: 850px;
+
+    .title {
+        @include primary__theme;
+        @extend %flex--wrap--center;
+    }
+
+    .title-menu {
+        @include menu__title--spec;
+    }
+
+    .menu {
+        height: 900px;
+        @include menu__theme($primary-color-menu, 2%);
+        @include menu__sizing;
+
+        &__title {
+            @include menu__title--spec;
+            padding: 60px 0 50px 0;
+        }
+
+        &__dishes {
+            margin: 0 20px 0 20px;
+            @include menus--table;
+        }
+    }
+}
+
+.footer {
+
+    @include primary__theme;
+    @extend %flex--wrap--center;
+    justify-content: space-between;
+    padding: 0 15px 0 15px;
+}
+
+/////////* form.scss specify for the menu-2.html */////////
+
+
+.entire-page-menu-3 {
+    width: 850px;
+
+    .title {
+        @include primary__theme;
+        @extend %flex--wrap--center;
+    }
+
+    .title-menu {
+        @include menu__title--spec;
+    }
+
+    .menu {
+        height: 900px;
+        @include menu__theme($primary-color-menu, 3%);
+        @include menu__sizing;
+
+        &__title {
+            @include menu__title--spec;
+            padding: 60px 0 50px 0;
+        }
+
+        &__dishes {
+            margin: 0 20px 0 20px;
+            @include menus--table;
+        }
+    }
+}
+
+.footer {
+
+    @include primary__theme;
+    @extend %flex--wrap--center;
+    justify-content: space-between;
+    padding: 0 15px 0 15px;
 }

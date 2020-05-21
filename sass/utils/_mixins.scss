@@ -1,24 +1,30 @@
-/////////* General Mixins  for the "All" */////////
-
 @mixin primary__theme {
     background-color: $primary-color-background;
     color: $primary-color-text;
 }
 
 
-/////////* Mixins specify for the "entire-page" */////////
-
-
-
-/////////* Mixins specify for the "entire-page-menus" */////////
-
-
 @mixin menus--table {
-
-    table,
     td {
         width: 100%;
-        border: 2px black solid;
+        height: 40px;
     }
 
+    td:nth-child(2) {
+        text-align: right;
+    }
+}
+
+@mixin menu__sizing {
+    margin: 0 auto 50px auto;
+    max-width: 630px;
+}
+
+@mixin menu__theme ($color:$primary-color-menu, $lighten:0%) {
+    background-color: lighten($primary-color-menu, $lighten);
+}
+
+@mixin menu__title--spec {
+    text-align: center;
+    padding: 40px 0 0 0;
 }
