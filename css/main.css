@@ -37,6 +37,12 @@ body {
   background-color: #ffe6e6;
 }
 
+.entire-page .menu__card:nth-child(1) .icones {
+  background: -webkit-linear-gradient(-10deg, red, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .entire-page .menu__card:nth-child(2) {
   background: -webkit-linear-gradient(-10deg, gold, purple);
   -webkit-background-clip: text;
@@ -114,6 +120,18 @@ body {
 .entire-page-menu .menu__title {
   text-align: center;
   padding: 40px 0 0 0;
+  font-size: 28px;
+}
+
+.entire-page-menu .menu__title .icones {
+  font-size: 50px;
+  background: -webkit-linear-gradient(-10deg, red, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.entire-page-menu .menu__title__spec {
+  margin-top: 10px;
 }
 
 .entire-page-menu .menu__dishes {
@@ -154,6 +172,9 @@ body {
 
 .entire-page-menu .menu .menu__footer .icones {
   padding: 0 10px 0 10px;
+  background: -webkit-linear-gradient(-10deg, red, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .entire-page-menu .footer {
@@ -187,9 +208,12 @@ body {
 }
 
 .entire-page-menu-2 .menu__title {
+  background: -webkit-linear-gradient(-10deg, gold, purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-align: center;
   padding: 40px 0 0 0;
-  padding: 60px 0 50px 0;
+  font-size: 40px;
 }
 
 .entire-page-menu-2 .menu__dishes {
@@ -264,9 +288,12 @@ body {
 }
 
 .entire-page-menu-3 .menu__title {
+  background: -webkit-linear-gradient(-10deg, blue, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-align: center;
   padding: 40px 0 0 0;
-  padding: 60px 0 50px 0;
+  font-size: 40px;
 }
 
 .entire-page-menu-3 .menu__dishes {
@@ -340,9 +367,12 @@ body {
 }
 
 .entire-page-menu-4 .menu__title {
+  background: -webkit-linear-gradient(-10deg, green, #e6ffe6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-align: center;
   padding: 40px 0 0 0;
-  padding: 60px 0 50px 0;
+  font-size: 40px;
 }
 
 .entire-page-menu-4 .menu__dishes {

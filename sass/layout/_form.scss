@@ -25,6 +25,12 @@ body {
 
         &__card:nth-child(1) {
             @include menu__theme;
+
+            .icones {
+                @include menu__card-themes-text(red, orange);
+
+            }
+
         }
 
         &__card:nth-child(2) {
@@ -111,6 +117,17 @@ body {
 
         &__title {
             @include menu__title--spec;
+            font-size: 28px;
+
+            .icones {
+                font-size: 50px;
+                @include menu__card-themes-text(red, orange);
+            }
+
+            &__spec {
+                margin-top: 10px;
+
+            }
         }
 
         &__dishes {
@@ -139,6 +156,7 @@ body {
 
             .icones {
                 padding: 0 10px 0 10px;
+                @include menu__card-themes-text(red, orange);
             }
         }
     }
@@ -174,8 +192,10 @@ body {
         @include menu__sizing;
 
         &__title {
+
+            @include menu__card-themes-text(gold, purple);
             @include menu__title--spec;
-            padding: 60px 0 50px 0;
+            font-size: 40px;
         }
 
         &__dishes {
@@ -235,8 +255,9 @@ body {
         @include menu__sizing;
 
         &__title {
+            @include menu__card-themes-text(blue, lighten(blue, 50%));
             @include menu__title--spec;
-            padding: 60px 0 50px 0;
+            font-size: 40px;
         }
 
         &__dishes {
@@ -295,8 +316,10 @@ body {
         @include menu__sizing;
 
         &__title {
+            @include menu__card-themes-text(green, lighten(green, 70%));
             @include menu__title--spec;
-            padding: 60px 0 50px 0;
+
+            font-size: 40px;
         }
 
         &__dishes {
