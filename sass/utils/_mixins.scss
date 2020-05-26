@@ -3,6 +3,24 @@
     color: $primary-color-text;
 }
 
+@mixin menu__card-themes-text ($color-left, $color-right) {
+
+    background: -webkit-linear-gradient(-10deg, $color-left, $color-right);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+a:link,
+:visited,
+:hover,
+:active {
+    text-decoration: none;
+}
+
+
+
 
 @mixin menus--table {
     td {
@@ -15,16 +33,71 @@
     }
 }
 
+
+
 @mixin menu__sizing {
     margin: 0 auto 50px auto;
     max-width: 630px;
 }
 
 @mixin menu__theme ($color:$primary-color-menu, $lighten:0%) {
-    background-color: lighten($primary-color-menu, $lighten);
+    background-color: lighten($color, $lighten);
 }
 
 @mixin menu__title--spec {
     text-align: center;
     padding: 40px 0 0 0;
+}
+
+@mixin line-menu1 {
+
+    clip-path: polygon(43% 0, 100% 11%, 100% 89%, 67% 100%, 28% 94%, 0 72%, 0 16%);
+
+    width: 200px;
+    height: 6px;
+    background-color: orange;
+}
+
+@mixin line-menu2-right {
+
+    clip-path: polygon(17% 0, 100% 50%, 17% 100%, 0 50%);
+    margin: 30px 0px 30px 0px;
+    width: 200px;
+    height: 8px;
+    background-color: orange;
+}
+
+@mixin line-menu2-left {
+
+    clip-path: polygon(83% 0, 100% 50%, 83% 100%, 0 50%);
+    margin: 30px 0px 30px 0px;
+    width: 200px;
+    height: 8px;
+    background-color: orange;
+}
+
+@mixin line-menu3-right {
+
+    margin: 20px 0px 20px 0px;
+    clip-path: polygon(90% 60%, 100% 0, 96% 70%, 94% 100%, 0 100%, 7% 60%);
+    width: 200px;
+    height: 12px;
+    background-color: orange;
+}
+
+@mixin line-menu3-left {
+    margin: 20px 0px 20px 0px;
+    clip-path: polygon(93% 60%, 100% 100%, 6% 100%, 4% 70%, 0 0, 9% 60%);
+    width: 200px;
+    height: 12px;
+    background-color: orange;
+}
+
+@mixin line-menu4 {
+    margin: 20px 0px 20px 0px;
+    clip-path: polygon(0% 37%, 7% 33%, 19% 34%, 31% 33%, 48% 33%, 63% 31%, 79% 30%, 97% 35%,
+            100% 64%, 85% 68%, 66% 68%, 50% 67%, 42% 65%, 31% 69%, 16% 62%, 1% 60%);
+    width: 200px;
+    height: 25px;
+    background-color: orange;
 }

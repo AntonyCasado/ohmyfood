@@ -17,11 +17,51 @@ body {
 
     .menu {
 
+
         margin: 20px 0 20px 0;
         @extend %flex--wrap--center;
 
+
+
+        &__card:nth-child(1) {
+            @include menu__theme;
+        }
+
+        &__card:nth-child(2) {
+            @include menu__card-themes-text(gold, purple);
+            @include menu__theme($primary-color-menu, 2%);
+        }
+
+
+        &__card:nth-child(3) {
+            @include menu__card-themes-text(blue, lighten(blue, 50%));
+            @include menu__theme($primary-color-menu, 4%);
+        }
+
+        &__card:nth-child(4) {
+            @include menu__card-themes-text(green, lighten(green, 70%));
+            @include menu__theme($primary-color-menu, 6%);
+        }
+
+
         &__card {
-            margin: 20px;
+
+
+
+            box-shadow: 0.25rem 0.25rem 0.55rem 0.25rem rgb(184, 184, 184);
+            @extend %flex--wrap--center;
+            flex-direction: column;
+
+
+
+            margin: 40px 30px 30px 30px;
+            height: 380px;
+            width: 280px;
+
+            text-align: center;
+
+
+
         }
     }
 
@@ -74,8 +114,22 @@ body {
         }
 
         &__dishes {
+
+            &__titles {
+
+                margin: 0 50px 0 50px;
+                display: flex;
+                justify-content: space-between;
+
+                .line1 {
+                    margin: 30px 0px 20px 0px;
+                    @include line-menu1();
+                }
+            }
+
             margin: 0 50px 0 50px;
             @include menus--table;
+
         }
 
         .menu__footer {
@@ -125,8 +179,29 @@ body {
         }
 
         &__dishes {
-            margin: 0 20px 0 20px;
+
+            &__titles {
+
+                margin: 0 10px 0 10px;
+                display: flex;
+                justify-content: space-between;
+
+                .line2-right {
+
+                    @include line-menu2-right();
+                }
+
+                .line2-left {
+
+                    @include line-menu2-left();
+                }
+
+
+            }
+
+            margin: 0 50px 0 50px;
             @include menus--table;
+
         }
     }
 }
@@ -139,7 +214,7 @@ body {
     padding: 0 15px 0 15px;
 }
 
-/////////* form.scss specify for the menu-2.html */////////
+/////////* form.scss specify for the menu-3.html */////////
 
 
 .entire-page-menu-3 {
@@ -165,8 +240,87 @@ body {
         }
 
         &__dishes {
-            margin: 0 20px 0 20px;
+
+            &__titles {
+
+                margin: 0 10px 0 10px;
+                display: flex;
+                justify-content: space-around;
+
+                .line3-right {
+                    @include line-menu3-right();
+                }
+
+                .line3-left {
+                    @include line-menu3-left();
+                }
+
+
+            }
+
+            margin: 0 50px 0 50px;
             @include menus--table;
+
+        }
+    }
+}
+
+.footer {
+
+    @include primary__theme;
+    @extend %flex--wrap--center;
+    justify-content: space-between;
+    padding: 0 15px 0 15px;
+}
+
+
+/////////* form.scss specify for the menu-4.html */////////
+
+
+.entire-page-menu-4 {
+    width: 850px;
+
+    .title {
+        @include primary__theme;
+        @extend %flex--wrap--center;
+    }
+
+    .title-menu {
+        @include menu__title--spec;
+    }
+
+    .menu {
+        height: 900px;
+        @include menu__theme($primary-color-menu, 3%);
+        @include menu__sizing;
+
+        &__title {
+            @include menu__title--spec;
+            padding: 60px 0 50px 0;
+        }
+
+        &__dishes {
+
+            &__titles {
+
+                margin: 0 10px 0 10px;
+                display: flex;
+                justify-content: space-around;
+
+                .line3-right {
+                    @include line-menu4();
+                }
+
+                .line3-left {
+                    @include line-menu4();
+                }
+
+
+            }
+
+            margin: 0 50px 0 50px;
+            @include menus--table;
+
         }
     }
 }
