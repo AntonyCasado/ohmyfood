@@ -3,9 +3,9 @@
     color: $primary-color-text;
 }
 
-@mixin menu__card-themes-text ($color-left, $color-right) {
+@mixin menu__card-themes-text ($grad, $color-left, $color-right) {
 
-    background: -webkit-linear-gradient(-10deg, $color-left, $color-right);
+    background: -webkit-linear-gradient($grad, $color-left, $color-right);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -36,7 +36,7 @@ a:link,
 
 
 @mixin menu__sizing {
-    margin: 0 auto 50px auto;
+    margin: 0 auto 100px auto;
     max-width: 630px;
 }
 
@@ -100,4 +100,17 @@ a:link,
     width: 200px;
     height: 25px;
     background-color: orange;
+}
+
+
+@mixin animation-cursor-zoom {
+
+    cursor: pointer;
+    transform: scale(1);
+    transition: 400ms transform;
+
+    &:hover {
+        transform: scale(1.15);
+    }
+
 }

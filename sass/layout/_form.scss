@@ -1,79 +1,87 @@
 /////////* form.scss specify for the Index.html */////////
 
 body {
-    @extend %flex--wrap--center;
     margin: 0;
 }
 
+.title {
+    @include primary__theme;
+    @extend %flex--wrap--center;
+
+    h1 {
+        @include animation-cursor-zoom;
+    }
+}
 
 .entire-page {
 
-    max-width: 850px;
-
-    .title {
-        @include primary__theme;
-        @extend %flex--wrap--center;
-    }
 
     .menu {
+        margin: auto;
+        max-width: 850px;
 
+        p {
+            font-size: 25px;
+        }
 
-        margin: 20px 0 20px 0;
         @extend %flex--wrap--center;
 
 
 
         &__card:nth-child(1) {
             @include menu__theme;
+            color: black;
 
-            .icones {
-                @include menu__card-themes-text(red, orange);
-
+            p {
+                margin: 0 0 50px 0;
             }
 
+            .icones {
+                @include menu__card-themes-text(-100deg, red, orange);
+            }
         }
 
         &__card:nth-child(2) {
-            @include menu__card-themes-text(gold, purple);
-            @include menu__theme($primary-color-menu, 2%);
+            @include menu__theme(rgb(255, 204, 254), 8%);
+
+            .menu__card__text {
+                @include menu__card-themes-text(-10deg, gold, purple);
+            }
         }
 
 
         &__card:nth-child(3) {
-            @include menu__card-themes-text(blue, lighten(blue, 50%));
-            @include menu__theme($primary-color-menu, 4%);
+            @include menu__theme(rgb(220, 220, 220), 10%);
+
+            .menu__card__text {
+                @include menu__card-themes-text(-10deg, blue, lighten(blue, 50%));
+            }
         }
 
         &__card:nth-child(4) {
-            @include menu__card-themes-text(green, lighten(green, 70%));
-            @include menu__theme($primary-color-menu, 6%);
+            .menu__card__text {
+                @include menu__card-themes-text(-10deg, green, lighten(green, 70%));
+            }
         }
 
-
         &__card {
-
-
 
             box-shadow: 0.25rem 0.25rem 0.55rem 0.25rem rgb(184, 184, 184);
             @extend %flex--wrap--center;
             flex-direction: column;
-
-
-
             margin: 40px 30px 30px 30px;
             height: 380px;
             width: 280px;
-
             text-align: center;
 
-
+            @include animation-cursor-zoom;
 
         }
     }
 
     .soon {
         @extend %flex--wrap--center;
-        margin-bottom: 20px;
+        margin-bottom: 90px;
 
         &_box {
             @include primary__theme;
@@ -84,13 +92,7 @@ body {
     }
 
 
-    .footer {
-        @include primary__theme;
-        @extend %flex--wrap--center;
-        justify-content: space-between;
-        padding: 0 15px 0 15px;
 
-    }
 
 }
 
@@ -99,19 +101,15 @@ body {
 
 .entire-page-menu {
 
-    width: 850px;
 
-    .title {
-        @include primary__theme;
-        @extend %flex--wrap--center;
-    }
+
 
     .title-menu {
         @include menu__title--spec;
     }
 
     .menu {
-
+        box-shadow: 0.25rem 0.25rem 0.55rem 0.25rem rgb(184, 184, 184);
         @include menu__theme;
         @include menu__sizing;
 
@@ -121,7 +119,7 @@ body {
 
             .icones {
                 font-size: 50px;
-                @include menu__card-themes-text(red, orange);
+                @include menu__card-themes-text(-10deg, red, orange);
             }
 
             &__spec {
@@ -156,17 +154,12 @@ body {
 
             .icones {
                 padding: 0 10px 0 10px;
-                @include menu__card-themes-text(red, orange);
+                @include menu__card-themes-text(-10deg, red, orange);
             }
         }
     }
 
-    .footer {
-        @include primary__theme;
-        @extend %flex--wrap--center;
-        justify-content: space-between;
-        padding: 0 15px 0 15px;
-    }
+
 
 }
 
@@ -175,12 +168,9 @@ body {
 
 
 .entire-page-menu-2 {
-    width: 850px;
 
-    .title {
-        @include primary__theme;
-        @extend %flex--wrap--center;
-    }
+
+
 
     .title-menu {
         @include menu__title--spec;
@@ -188,12 +178,13 @@ body {
 
     .menu {
         height: 900px;
-        @include menu__theme($primary-color-menu, 2%);
+        box-shadow: 0.25rem 0.25rem 0.55rem 0.25rem rgb(184, 184, 184);
+        @include menu__theme(rgb(255, 204, 254), 8%);
         @include menu__sizing;
 
         &__title {
 
-            @include menu__card-themes-text(gold, purple);
+            @include menu__card-themes-text(-10deg, gold, purple);
             @include menu__title--spec;
             font-size: 40px;
         }
@@ -226,24 +217,14 @@ body {
     }
 }
 
-.footer {
-
-    @include primary__theme;
-    @extend %flex--wrap--center;
-    justify-content: space-between;
-    padding: 0 15px 0 15px;
-}
 
 /////////* form.scss specify for the menu-3.html */////////
 
 
 .entire-page-menu-3 {
-    width: 850px;
 
-    .title {
-        @include primary__theme;
-        @extend %flex--wrap--center;
-    }
+
+
 
     .title-menu {
         @include menu__title--spec;
@@ -251,11 +232,12 @@ body {
 
     .menu {
         height: 900px;
-        @include menu__theme($primary-color-menu, 3%);
+        box-shadow: 0.25rem 0.25rem 0.55rem 0.25rem rgb(184, 184, 184);
+        @include menu__theme(rgb(220, 220, 220), 10%);
         @include menu__sizing;
 
         &__title {
-            @include menu__card-themes-text(blue, lighten(blue, 50%));
+            @include menu__card-themes-text (-10deg, blue, lighten(blue, 50%));
             @include menu__title--spec;
             font-size: 40px;
         }
@@ -286,25 +268,16 @@ body {
     }
 }
 
-.footer {
 
-    @include primary__theme;
-    @extend %flex--wrap--center;
-    justify-content: space-between;
-    padding: 0 15px 0 15px;
-}
 
 
 /////////* form.scss specify for the menu-4.html */////////
 
 
 .entire-page-menu-4 {
-    width: 850px;
 
-    .title {
-        @include primary__theme;
-        @extend %flex--wrap--center;
-    }
+
+
 
     .title-menu {
         @include menu__title--spec;
@@ -312,11 +285,11 @@ body {
 
     .menu {
         height: 900px;
-        @include menu__theme($primary-color-menu, 3%);
+        box-shadow: 0.25rem 0.25rem 0.55rem 0.25rem rgb(184, 184, 184);
         @include menu__sizing;
 
         &__title {
-            @include menu__card-themes-text(green, lighten(green, 70%));
+            @include menu__card-themes-text(-10deg, green, lighten(green, 70%));
             @include menu__title--spec;
 
             font-size: 40px;
@@ -350,8 +323,16 @@ body {
 
 .footer {
 
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     @include primary__theme;
     @extend %flex--wrap--center;
     justify-content: space-between;
-    padding: 0 15px 0 15px;
+
+    .footer__btn {
+        @include animation-cursor-zoom;
+        margin: 20px 20px 20px 30px;
+    }
+
 }
