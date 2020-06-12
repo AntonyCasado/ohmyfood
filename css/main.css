@@ -29,21 +29,6 @@ body {
   color: #ffd11a;
 }
 
-.title h1 {
-  cursor: pointer;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: 400ms -webkit-transform;
-  transition: 400ms -webkit-transform;
-  transition: 400ms transform;
-  transition: 400ms transform, 400ms -webkit-transform;
-}
-
-.title h1:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
-}
-
 .entire-page .menu {
   margin: auto;
   max-width: 850px;
@@ -56,6 +41,20 @@ body {
 .entire-page .menu__card:nth-child(1) {
   background-color: #ffcccc;
   color: black;
+}
+
+.entire-page .menu__card:nth-child(1) .menu__card__text {
+  cursor: pointer;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 300ms all;
+  transition: 300ms all;
+}
+
+.entire-page .menu__card:nth-child(1) .menu__card__text:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  opacity: 0.7;
 }
 
 .entire-page .menu__card:nth-child(1) p {
@@ -73,9 +72,20 @@ body {
 }
 
 .entire-page .menu__card:nth-child(2) .menu__card__text {
+  cursor: pointer;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 300ms all;
+  transition: 300ms all;
   background: -webkit-linear-gradient(-10deg, gold, purple);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.entire-page .menu__card:nth-child(2) .menu__card__text:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  opacity: 0.7;
 }
 
 .entire-page .menu__card:nth-child(3) {
@@ -83,15 +93,37 @@ body {
 }
 
 .entire-page .menu__card:nth-child(3) .menu__card__text {
+  cursor: pointer;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 300ms all;
+  transition: 300ms all;
   background: -webkit-linear-gradient(-10deg, blue, white);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+.entire-page .menu__card:nth-child(3) .menu__card__text:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  opacity: 0.7;
+}
+
 .entire-page .menu__card:nth-child(4) .menu__card__text {
+  cursor: pointer;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 300ms all;
+  transition: 300ms all;
   background: -webkit-linear-gradient(-10deg, green, #e6ffe6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.entire-page .menu__card:nth-child(4) .menu__card__text:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  opacity: 0.7;
 }
 
 .entire-page .menu__card {
@@ -105,18 +137,6 @@ body {
   height: 380px;
   width: 280px;
   text-align: center;
-  cursor: pointer;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: 400ms -webkit-transform;
-  transition: 400ms -webkit-transform;
-  transition: 400ms transform;
-  transition: 400ms transform, 400ms -webkit-transform;
-}
-
-.entire-page .menu__card:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
 }
 
 .entire-page-menu .title-menu {
@@ -163,6 +183,29 @@ body {
           justify-content: space-between;
 }
 
+.entire-page-menu .menu__dishes__titles .menu__dishes__btn {
+  margin-top: 20px;
+}
+
+.entire-page-menu .menu__dishes__titles .menu__dishes__btn:hover + .progress > .progress__bar {
+  background: #4b9b87;
+  height: 5px;
+  border-radius: 25px;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.entire-page-menu .menu__dishes__titles .progress__bar {
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 1000ms;
+  transition: -webkit-transform 1000ms;
+  transition: transform 1000ms;
+  transition: transform 1000ms, -webkit-transform 1000ms;
+}
+
 .entire-page-menu .menu__dishes__titles .line1 {
   margin: 30px 0px 20px 0px;
   -webkit-clip-path: polygon(43% 0, 100% 11%, 100% 89%, 67% 100%, 28% 94%, 0 72%, 0 16%);
@@ -207,7 +250,7 @@ body {
 }
 
 .entire-page-menu-2 .menu__title {
-  background: -webkit-linear-gradient(-10deg, gold, purple);
+  background: -webkit-linear-gradient(-10deg, #ff9900, #884dff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
@@ -230,6 +273,41 @@ body {
           justify-content: space-between;
 }
 
+.entire-page-menu-2 .menu__dishes__titles .menu__dishes__btn {
+  margin-top: 20px;
+}
+
+.entire-page-menu-2 .menu__dishes__titles .menu__dishes__btn:hover + .progress > .progress__bar {
+  background: #4b9b87;
+  height: 5px;
+  border-radius: 25px;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.entire-page-menu-2 .menu__dishes__titles .menu__dishes-1 {
+  color: #ff9900;
+}
+
+.entire-page-menu-2 .menu__dishes__titles .menu__dishes-2 {
+  color: #cc99ff;
+}
+
+.entire-page-menu-2 .menu__dishes__titles .menu__dishes-3 {
+  color: #884dff;
+}
+
+.entire-page-menu-2 .menu__dishes__titles .progress__bar {
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 1000ms;
+  transition: -webkit-transform 1000ms;
+  transition: transform 1000ms;
+  transition: transform 1000ms, -webkit-transform 1000ms;
+}
+
 .entire-page-menu-2 .menu__dishes__titles .line2-right {
   -webkit-clip-path: polygon(17% 0, 100% 50%, 17% 100%, 0 50%);
           clip-path: polygon(17% 0, 100% 50%, 17% 100%, 0 50%);
@@ -248,6 +326,18 @@ body {
   background-color: orange;
 }
 
+.entire-page-menu-2 .menu__dishes__titles .line21 {
+  background-color: #ff9900;
+}
+
+.entire-page-menu-2 .menu__dishes__titles .line22 {
+  background-color: #cc99ff;
+}
+
+.entire-page-menu-2 .menu__dishes__titles .line23 {
+  background-color: #884dff;
+}
+
 .entire-page-menu-2 .menu__dishes td {
   width: 100%;
   height: 40px;
@@ -255,6 +345,18 @@ body {
 
 .entire-page-menu-2 .menu__dishes td:nth-child(2) {
   text-align: right;
+}
+
+.entire-page-menu-2 .menu .menu__1 {
+  color: #ff9900;
+}
+
+.entire-page-menu-2 .menu .menu__2 {
+  color: #cc99ff;
+}
+
+.entire-page-menu-2 .menu .menu__3 {
+  color: #884dff;
 }
 
 .entire-page-menu-3 .title-menu {
@@ -272,7 +374,7 @@ body {
 }
 
 .entire-page-menu-3 .menu__title {
-  background: -webkit-linear-gradient(-10deg, blue, white);
+  background: -webkit-linear-gradient(-10deg, #0039e6, #66c2ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
@@ -293,22 +395,87 @@ body {
       justify-content: space-around;
 }
 
-.entire-page-menu-3 .menu__dishes__titles .line3-right {
+.entire-page-menu-3 .menu__dishes__titles .menu__dishes__btn {
+  margin-top: 20px;
+}
+
+.entire-page-menu-3 .menu__dishes__titles .menu__dishes__btn:hover + .progress > .progress__bar {
+  background: #4b9b87;
+  height: 5px;
+  border-radius: 25px;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.entire-page-menu-3 .menu__dishes__titles .progress__bar {
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 1000ms;
+  transition: -webkit-transform 1000ms;
+  transition: transform 1000ms;
+  transition: transform 1000ms, -webkit-transform 1000ms;
+}
+
+.entire-page-menu-3 .menu__dishes__titles .line3-right-1 {
   margin: 20px 0px 20px 0px;
   -webkit-clip-path: polygon(90% 60%, 100% 0, 96% 70%, 94% 100%, 0 100%, 7% 60%);
           clip-path: polygon(90% 60%, 100% 0, 96% 70%, 94% 100%, 0 100%, 7% 60%);
   width: 200px;
   height: 12px;
   background-color: orange;
+  background: #0039e6;
 }
 
-.entire-page-menu-3 .menu__dishes__titles .line3-left {
+.entire-page-menu-3 .menu__dishes__titles .line3-right-2 {
+  margin: 20px 0px 20px 0px;
+  -webkit-clip-path: polygon(90% 60%, 100% 0, 96% 70%, 94% 100%, 0 100%, 7% 60%);
+          clip-path: polygon(90% 60%, 100% 0, 96% 70%, 94% 100%, 0 100%, 7% 60%);
+  width: 200px;
+  height: 12px;
+  background-color: orange;
+  background: #4d79ff;
+}
+
+.entire-page-menu-3 .menu__dishes__titles .line3-right-3 {
+  margin: 20px 0px 20px 0px;
+  -webkit-clip-path: polygon(90% 60%, 100% 0, 96% 70%, 94% 100%, 0 100%, 7% 60%);
+          clip-path: polygon(90% 60%, 100% 0, 96% 70%, 94% 100%, 0 100%, 7% 60%);
+  width: 200px;
+  height: 12px;
+  background-color: orange;
+  background: #66c2ff;
+}
+
+.entire-page-menu-3 .menu__dishes__titles .line3-left-1 {
   margin: 20px 0px 20px 0px;
   -webkit-clip-path: polygon(93% 60%, 100% 100%, 6% 100%, 4% 70%, 0 0, 9% 60%);
           clip-path: polygon(93% 60%, 100% 100%, 6% 100%, 4% 70%, 0 0, 9% 60%);
   width: 200px;
   height: 12px;
   background-color: orange;
+  background: #0039e6;
+}
+
+.entire-page-menu-3 .menu__dishes__titles .line3-left-2 {
+  margin: 20px 0px 20px 0px;
+  -webkit-clip-path: polygon(93% 60%, 100% 100%, 6% 100%, 4% 70%, 0 0, 9% 60%);
+          clip-path: polygon(93% 60%, 100% 100%, 6% 100%, 4% 70%, 0 0, 9% 60%);
+  width: 200px;
+  height: 12px;
+  background-color: orange;
+  background: #4d79ff;
+}
+
+.entire-page-menu-3 .menu__dishes__titles .line3-left-3 {
+  margin: 20px 0px 20px 0px;
+  -webkit-clip-path: polygon(93% 60%, 100% 100%, 6% 100%, 4% 70%, 0 0, 9% 60%);
+          clip-path: polygon(93% 60%, 100% 100%, 6% 100%, 4% 70%, 0 0, 9% 60%);
+  width: 200px;
+  height: 12px;
+  background-color: orange;
+  background: #66c2ff;
 }
 
 .entire-page-menu-3 .menu__dishes td {
@@ -334,7 +501,7 @@ body {
 }
 
 .entire-page-menu-4 .menu__title {
-  background: -webkit-linear-gradient(-10deg, green, #e6ffe6);
+  background: -webkit-linear-gradient(-10deg, #009900, #ccff99);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
@@ -355,6 +522,29 @@ body {
       justify-content: space-around;
 }
 
+.entire-page-menu-4 .menu__dishes__titles .menu__dishes__btn {
+  margin-top: 20px;
+}
+
+.entire-page-menu-4 .menu__dishes__titles .menu__dishes__btn:hover + .progress > .progress__bar {
+  background: #4b9b87;
+  height: 5px;
+  border-radius: 25px;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.entire-page-menu-4 .menu__dishes__titles .progress__bar {
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 1000ms;
+  transition: -webkit-transform 1000ms;
+  transition: transform 1000ms;
+  transition: transform 1000ms, -webkit-transform 1000ms;
+}
+
 .entire-page-menu-4 .menu__dishes__titles .line3-right {
   margin: 20px 0px 20px 0px;
   -webkit-clip-path: polygon(0% 37%, 7% 33%, 19% 34%, 31% 33%, 48% 33%, 63% 31%, 79% 30%, 97% 35%, 100% 64%, 85% 68%, 66% 68%, 50% 67%, 42% 65%, 31% 69%, 16% 62%, 1% 60%);
@@ -362,6 +552,8 @@ body {
   width: 200px;
   height: 25px;
   background-color: orange;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ccff99), to(#009900));
+  background-image: linear-gradient(to right, #ccff99, #009900);
 }
 
 .entire-page-menu-4 .menu__dishes__titles .line3-left {
@@ -371,6 +563,8 @@ body {
   width: 200px;
   height: 25px;
   background-color: orange;
+  background-image: -webkit-gradient(linear, right top, left top, from(#ccff99), to(#009900));
+  background-image: linear-gradient(to left, #ccff99, #009900);
 }
 
 .entire-page-menu-4 .menu__dishes td {
@@ -387,30 +581,27 @@ body {
 }
 
 .btn_text {
+  background-color: red;
   background-color: #4b9b87;
   color: #ffd11a;
   font-size: 20px;
   border-radius: 15px;
   padding: 0 25px 0 15px;
-  cursor: pointer;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: 400ms -webkit-transform;
-  transition: 400ms -webkit-transform;
-  transition: 400ms transform;
-  transition: 400ms transform, 400ms -webkit-transform;
 }
 
-.btn_text:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
-}
-
-.loading:after {
+.btn_text .loading:after {
   content: ' .';
   -webkit-animation: dots 1s steps(5, end) infinite;
           animation: dots 1s steps(5, end) infinite;
+  visibility: hidden;
   font-size: 30px;
+}
+
+.btn_text:hover .loading:after {
+  content: ' .';
+  -webkit-animation: dots 1s steps(5, end) infinite;
+          animation: dots 1s steps(5, end) infinite;
+  visibility: visible;
 }
 
 @-webkit-keyframes dots {
