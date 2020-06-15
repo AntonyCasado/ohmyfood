@@ -487,4 +487,9 @@ body {
         margin: 20px 20px 20px 30px;
     }
 
+    @media screen and (max-width: 450px) {
+        position: unset;
+        ;
+    }
+
 }
