@@ -49,6 +49,8 @@ body {
         }
 
         &__card:nth-child(2) {
+
+            font-family: 'Oleo Script';
             @include menu__theme(rgb(255, 204, 254), 8%);
 
             .menu__card__text {
@@ -59,6 +61,7 @@ body {
 
 
         &__card:nth-child(3) {
+            font-family: 'Satisfy';
             @include menu__theme(rgb(220, 220, 220), 10%);
 
             .menu__card__text {
@@ -68,6 +71,8 @@ body {
         }
 
         &__card:nth-child(4) {
+            font-family: 'Bad script';
+
             .menu__card__text {
                 @include animation-cursor-zoom;
                 @include menu__card-themes-text(-10deg, green, lighten(green, 70%));
