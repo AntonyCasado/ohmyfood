@@ -25,6 +25,7 @@ body {
 }
 
 .title {
+  font-family: 'Amiko';
   background-color: #4b9b87;
   color: #ffd11a;
 }
@@ -39,6 +40,7 @@ body {
 }
 
 .entire-page .menu__card:nth-child(1) {
+  font-family: 'Dancing Script';
   background-color: #ffcccc;
   color: black;
 }
@@ -139,9 +141,14 @@ body {
   text-align: center;
 }
 
+.entire-page-menu {
+  font-family: 'Dancing Script';
+}
+
 .entire-page-menu .title-menu {
   text-align: center;
   padding: 40px 0 0 0;
+  font-family: 'Amiko';
 }
 
 .entire-page-menu .menu {
@@ -155,7 +162,7 @@ body {
 .entire-page-menu .menu__title {
   text-align: center;
   padding: 40px 0 0 0;
-  font-size: 28px;
+  font-size: 34px;
 }
 
 .entire-page-menu .menu__title .icones {
@@ -181,6 +188,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-size: 19px;
 }
 
 .entire-page-menu .menu__dishes__titles .menu__dishes__btn {
@@ -235,9 +243,14 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.entire-page-menu-2 {
+  font-family: 'Oleo Script';
+}
+
 .entire-page-menu-2 .title-menu {
   text-align: center;
   padding: 40px 0 0 0;
+  font-family: 'Amiko';
 }
 
 .entire-page-menu-2 .menu {
@@ -255,7 +268,7 @@ body {
   -webkit-text-fill-color: transparent;
   text-align: center;
   padding: 40px 0 0 0;
-  font-size: 40px;
+  font-size: 34px;
 }
 
 .entire-page-menu-2 .menu__dishes {
@@ -263,7 +276,7 @@ body {
 }
 
 .entire-page-menu-2 .menu__dishes__titles {
-  font-size: 18px;
+  font-size: 19px;
   margin: 0 10px 0 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -359,7 +372,12 @@ body {
   color: #884dff;
 }
 
+.entire-page-menu-3 {
+  font-family: 'Satisfy';
+}
+
 .entire-page-menu-3 .title-menu {
+  font-family: 'Amiko';
   text-align: center;
   padding: 40px 0 0 0;
 }
@@ -379,7 +397,7 @@ body {
   -webkit-text-fill-color: transparent;
   text-align: center;
   padding: 40px 0 0 0;
-  font-size: 40px;
+  font-size: 34px;
 }
 
 .entire-page-menu-3 .menu__dishes {
@@ -387,6 +405,7 @@ body {
 }
 
 .entire-page-menu-3 .menu__dishes__titles {
+  font-size: 19px;
   margin: 0 10px 0 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -487,7 +506,12 @@ body {
   text-align: right;
 }
 
+.entire-page-menu-4 {
+  font-family: 'Bad Script';
+}
+
 .entire-page-menu-4 .title-menu {
+  font-family: 'Amiko';
   text-align: center;
   padding: 40px 0 0 0;
 }
@@ -506,7 +530,7 @@ body {
   -webkit-text-fill-color: transparent;
   text-align: center;
   padding: 40px 0 0 0;
-  font-size: 40px;
+  font-size: 34px;
 }
 
 .entire-page-menu-4 .menu__dishes {
@@ -520,6 +544,7 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  font-size: 19px;
 }
 
 .entire-page-menu-4 .menu__dishes__titles .menu__dishes__btn {
@@ -577,6 +602,7 @@ body {
 }
 
 .btn {
+  font-family: 'Amiko';
   margin-bottom: 90px;
 }
 
@@ -643,6 +669,7 @@ body {
 }
 
 .footer {
+  font-family: 'Amiko';
   position: fixed;
   bottom: 0;
   width: 100%;

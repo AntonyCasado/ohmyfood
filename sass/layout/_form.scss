@@ -5,8 +5,11 @@ body {
 }
 
 .title {
+
+    font-family: 'Amiko';
     @include primary__theme;
     @extend %flex--wrap--center;
+
 }
 
 .entire-page {
@@ -25,6 +28,8 @@ body {
 
 
         &__card:nth-child(1) {
+
+            font-family: 'Dancing Script';
 
             .menu__card__text {
                 @include animation-cursor-zoom;
@@ -97,9 +102,11 @@ body {
 
 
 
+    font-family: 'Dancing Script';
 
     .title-menu {
         @include menu__title--spec;
+        font-family: 'Amiko';
     }
 
     .menu {
@@ -109,7 +116,7 @@ body {
 
         &__title {
             @include menu__title--spec;
-            font-size: 28px;
+            font-size: $menu__titles;
 
             .icones {
                 font-size: 50px;
@@ -129,6 +136,7 @@ body {
                 margin: 0 50px 0 50px;
                 display: flex;
                 justify-content: space-between;
+                font-size: $dishes__titles;
 
                 .menu__dishes__btn {
                     margin-top: 20px;
@@ -178,9 +186,11 @@ body {
 
 
 
+    font-family: 'Oleo Script';
 
     .title-menu {
         @include menu__title--spec;
+        font-family: 'Amiko';
     }
 
     .menu {
@@ -193,7 +203,7 @@ body {
 
             @include menu__card-themes-text(-10deg, $color-title-chic1, $color-title-chic3);
             @include menu__title--spec;
-            font-size: 40px;
+            font-size: $menu__titles;
         }
 
 
@@ -203,7 +213,7 @@ body {
 
 
             &__titles {
-                font-size: 18px;
+                font-size: $dishes__titles;
                 margin: 0 10px 0 10px;
                 display: flex;
                 justify-content: space-between;
@@ -211,6 +221,7 @@ body {
                 .menu__dishes__btn {
                     margin-top: 20px;
                     @include bar-progress;
+
 
                 }
 
@@ -285,9 +296,10 @@ body {
 .entire-page-menu-3 {
 
 
-
+    font-family: 'Satisfy';
 
     .title-menu {
+        font-family: 'Amiko';
         @include menu__title--spec;
     }
 
@@ -300,14 +312,14 @@ body {
         &__title {
             @include menu__card-themes-text (-10deg, $color-title-delice1, $color-title-delice3);
             @include menu__title--spec;
-            font-size: 40px;
+            font-size: $menu__titles;
         }
 
         &__dishes {
 
             &__titles {
 
-
+                font-size: $dishes__titles;
                 margin: 0 10px 0 10px;
                 display: flex;
                 justify-content: space-around;
@@ -373,9 +385,10 @@ body {
 .entire-page-menu-4 {
 
 
-
+    font-family: 'Bad Script';
 
     .title-menu {
+        font-family: 'Amiko';
         @include menu__title--spec;
     }
 
@@ -387,8 +400,7 @@ body {
         &__title {
             @include menu__card-themes-text(-10deg, $color-title-palette1, $color-title-palette3);
             @include menu__title--spec;
-
-            font-size: 40px;
+            font-size: $menu__titles;
         }
 
         &__dishes {
@@ -397,7 +409,7 @@ body {
                 margin: 0 10px 0 10px;
                 display: flex;
                 justify-content: space-around;
-
+                font-size: $dishes__titles;
 
                 .menu__dishes__btn {
                     margin-top: 20px;
@@ -431,6 +443,7 @@ body {
 }
 
 .btn {
+    font-family: 'Amiko';
     @extend %flex--wrap--center;
     margin-bottom: 90px;
 
@@ -453,6 +466,9 @@ body {
 
 
 .footer {
+
+    font-family: 'Amiko';
+
 
     position: fixed;
     bottom: 0;
