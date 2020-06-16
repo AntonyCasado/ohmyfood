@@ -43,14 +43,13 @@ body {
             }
 
             .icones {
-
-                @include menu__card-themes-text(-100deg, red, orange);
+                @include menu__card-themes-text(-100deg, $color-icone-note1, $color-icone-note2);
             }
         }
 
         &__card:nth-child(2) {
 
-            font-family: 'Oleo Script';
+            font-family: 'Arapey';
             @include menu__theme(rgb(255, 204, 254), 8%);
 
             .menu__card__text {
@@ -125,7 +124,7 @@ body {
 
             .icones {
                 font-size: 50px;
-                @include menu__card-themes-text(-10deg, red, orange);
+                @include menu__card-themes-text(-10deg, $color-icone-note1, $color-icone-note2);
             }
 
             &__spec {
@@ -177,7 +176,7 @@ body {
 
             .icones {
                 padding: 0 10px 0 10px;
-                @include menu__card-themes-text(-10deg, red, orange);
+                @include menu__card-themes-text(-10deg, $color-icone-note1, $color-icone-note2);
             }
         }
     }
@@ -194,7 +193,7 @@ body {
 
 
 
-    font-family: 'Oleo Script';
+    font-family: 'Arapey';
 
     .title-menu {
         @include menu__title--spec;

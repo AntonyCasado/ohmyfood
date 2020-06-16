@@ -64,13 +64,13 @@ body {
 }
 
 .entire-page .menu__card:nth-child(1) .icones {
-  background: -webkit-linear-gradient(-100deg, red, orange);
+  background: -webkit-linear-gradient(-100deg, #ff3333, #ff8533);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .entire-page .menu__card:nth-child(2) {
-  font-family: 'Oleo Script';
+  font-family: 'Arapey';
   background-color: #fff5ff;
 }
 
@@ -173,7 +173,7 @@ body {
 
 .entire-page-menu .menu__title .icones {
   font-size: 50px;
-  background: -webkit-linear-gradient(-10deg, red, orange);
+  background: -webkit-linear-gradient(-10deg, #ff3333, #ff8533);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -247,13 +247,13 @@ body {
 
 .entire-page-menu .menu .menu__footer .icones {
   padding: 0 10px 0 10px;
-  background: -webkit-linear-gradient(-10deg, red, orange);
+  background: -webkit-linear-gradient(-10deg, #ff3333, #ff8533);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .entire-page-menu-2 {
-  font-family: 'Oleo Script';
+  font-family: 'Arapey';
 }
 
 .entire-page-menu-2 .title-menu {
