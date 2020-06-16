@@ -180,6 +180,7 @@ body {
 
 .entire-page-menu .menu__title__spec {
   margin-top: 10px;
+  color: #330000;
 }
 
 .entire-page-menu .menu__dishes {
@@ -194,11 +195,12 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 19px;
+  font-size: 20px;
 }
 
 .entire-page-menu .menu__dishes__titles .menu__dishes__btn {
   margin-top: 20px;
+  color: #330000;
 }
 
 .entire-page-menu .menu__dishes__titles .menu__dishes__btn:hover + .progress > .progress__bar {
@@ -227,6 +229,7 @@ body {
   width: 200px;
   height: 6px;
   background-color: orange;
+  background-color: #330000;
 }
 
 .entire-page-menu .menu__dishes td {
@@ -269,7 +272,7 @@ body {
 }
 
 .entire-page-menu-2 .menu__title {
-  background: -webkit-linear-gradient(-10deg, #ff9900, #884dff);
+  background: -webkit-linear-gradient(-10deg, #e67300, #884dff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
@@ -305,11 +308,11 @@ body {
 }
 
 .entire-page-menu-2 .menu__dishes__titles .menu__dishes-1 {
-  color: #ff9900;
+  color: #e67300;
 }
 
 .entire-page-menu-2 .menu__dishes__titles .menu__dishes-2 {
-  color: #cc99ff;
+  color: #c266ff;
 }
 
 .entire-page-menu-2 .menu__dishes__titles .menu__dishes-3 {
@@ -346,11 +349,11 @@ body {
 }
 
 .entire-page-menu-2 .menu__dishes__titles .line21 {
-  background-color: #ff9900;
+  background-color: #e67300;
 }
 
 .entire-page-menu-2 .menu__dishes__titles .line22 {
-  background-color: #cc99ff;
+  background-color: #c266ff;
 }
 
 .entire-page-menu-2 .menu__dishes__titles .line23 {
@@ -367,11 +370,11 @@ body {
 }
 
 .entire-page-menu-2 .menu .menu__1 {
-  color: #ff9900;
+  color: #e67300;
 }
 
 .entire-page-menu-2 .menu .menu__2 {
-  color: #cc99ff;
+  color: #c266ff;
 }
 
 .entire-page-menu-2 .menu .menu__3 {
@@ -530,7 +533,7 @@ body {
 }
 
 .entire-page-menu-4 .menu__title {
-  background: -webkit-linear-gradient(-10deg, #009900, #ccff99);
+  background: -webkit-linear-gradient(-10deg, #008000, #ccff33);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;

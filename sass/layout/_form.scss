@@ -130,7 +130,7 @@ body {
 
             &__spec {
                 margin-top: 10px;
-
+                color: $color-title-note;
             }
         }
 
@@ -141,11 +141,13 @@ body {
                 margin: 0 50px 0 50px;
                 display: flex;
                 justify-content: space-between;
-                font-size: $dishes__titles;
+
+                font-size: 20px;
 
                 .menu__dishes__btn {
                     margin-top: 20px;
-                    @include bar-progress
+                    @include bar-progress;
+                    color: $color-title-note;
                 }
 
                 .progress {
@@ -158,6 +160,7 @@ body {
                 .line1 {
                     margin: 30px 0px 20px 0px;
                     @include line-menu1();
+                    background-color: $color-title-note;
                 }
 
             }
